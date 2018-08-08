@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ContactsManager.DAL;
 
 namespace ContactsManager.Business
 {
@@ -61,6 +62,11 @@ namespace ContactsManager.Business
                 .Where(x => x.Prenom.StartsWith(texte, StringComparison.OrdinalIgnoreCase)
                             || x.Nom.StartsWith(texte, StringComparison.OrdinalIgnoreCase))
                 .ToList();
+        }
+
+        IEnumerable<Contact> IServiceContact.ChercherContacts(string texte)
+        {
+            throw new NotImplementedException();
         }
     }
 }

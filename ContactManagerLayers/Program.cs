@@ -15,9 +15,6 @@ namespace ContactManagerLayers
         static void Main(string[] args)
         {
 
-
-
-
             bool continuer = true;
             while (continuer)
             {
@@ -81,7 +78,7 @@ namespace ContactManagerLayers
             OutilsConsole.AfficherRetourMenu();
         }
 
-        static void AfficherListeContacts(IEnumerable<Contact> listeContacts)
+        static void AfficherListeContacts(IEnumerable<ContactsManager.DAL.Contact> listeContacts)
         {
             OutilsConsole.AfficherChamp("NOM", 10);
             OutilsConsole.AfficherChamp("PRENOM", 10);
