@@ -42,11 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OutilsConsole.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContactsManager.Business\ContactsManager.Business.csproj">
+      <Project>{ffd5e120-ce27-440b-9ae8-f086de8d3da2}</Project>
+      <Name>ContactsManager.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContactsManager.DAL\ContactsManager.DAL.csproj">
+      <Project>{fbdbd923-2946-4b87-96b4-bcd0f62a9a3c}</Project>
+      <Name>ContactsManager.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
